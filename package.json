@@ -1,6 +1,6 @@
 {
   "name": "@develasquez/material-design",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Framework-agnostic AI Agent Skill & CLI for Material Design 3 (M3 / Material You) - HCT semantic tokens, 10 color schemes, 3 surface modes, WCAG AAA contrast, offline web components, visual browser preview, and Google Stitch DESIGN.md specification.",
   "main": "SKILL.md",
   "bin": {
