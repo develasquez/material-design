@@ -20,7 +20,7 @@ Cuando el usuario solicite crear o rediseñar una interfaz con Material Design:
 1. **Lanzamiento del Selector Interactivo:**
    Ejecuta mediante `run_command`:
    ```bash
-   npx vanilla-core-ui --preview
+   npx material-design-skill --preview
    # O el script/servidor interactivo de previsualización correspondiente
    ```
    *Esto abre inmediatamente una pestaña en el navegador con la galería viva interactiva, componentes reales (botones rellenos, tonal, outlined, inputs, badges WCAG AAA) y conmutadores de Light/Dark Mode y Modos de Superficie.*

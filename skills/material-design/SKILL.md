@@ -116,7 +116,7 @@ When creating or redesigning an interface:
 1. **Launch the Interactive Visual Selector in Browser:**
    Run the preview selector:
    ```bash
-   npx vanilla-core-ui --preview
+   npx material-design-skill --preview
    ```
    *(Instantly opens the user's browser with the live interactive gallery, featuring real M3 buttons, WCAG AAA badges, and Light/Dark and Surface mode switchers).*
 
