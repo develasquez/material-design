@@ -1,0 +1,48 @@
+{
+  "name": "material-design-skill",
+  "version": "1.0.0",
+  "description": "Framework-agnostic AI Agent Skill & CLI for Material Design 3 (M3 / Material You) - HCT semantic tokens, 10 color schemes, 3 surface modes, WCAG AAA contrast, offline web components, visual browser preview, and Google Stitch DESIGN.md specification.",
+  "main": "skills/material-design/SKILL.md",
+  "bin": {
+    "material-design-skill": "bin/cli.js",
+    "material-design": "bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/develasquez/material-design-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/develasquez/material-design-skill/issues"
+  },
+  "homepage": "https://github.com/develasquez/material-design-skill#readme",
+  "files": [
+    "skills/",
+    "SKILL.md",
+    "bin/",
+    "README.md",
+    "LICENSE",
+    "references/",
+    "vendor/"
+  ],
+  "scripts": {
+    "test": "node bin/cli.js --help"
+  },
+  "keywords": [
+    "material-design",
+    "material-you",
+    "material-3",
+    "m3",
+    "design-system",
+    "ai-agent",
+    "antigravity",
+    "claude",
+    "cursor",
+    "gemini",
+    "tokens",
+    "hct",
+    "wcag-aaa",
+    "google-stitch"
+  ],
+  "author": "develasquez",
+  "license": "MIT"
+}
