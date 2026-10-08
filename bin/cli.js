@@ -30,14 +30,14 @@ if (isPalettes) {
 
 if (isHelp) {
   console.log(`
-🎨 Material Design 3 Skill Installer & CLI (material-design-skill)
+🎨 Material Design 3 Skill Installer & CLI (@develasquez/material-design)
 
 Usage:
-  npx material-design-skill             Install skill into local workspace (.agents/skills/material-design)
-  npx material-design-skill --global    Install skill globally (~/.gemini/config/skills/material-design)
-  npx material-design-skill --preview   Open interactive visual HTML palette gallery in your browser
-  npx material-design-skill --palettes  Show Truecolor 24-bit terminal preview of the 10 M3 palettes
-  npx material-design-skill --help      Show help message
+  npx @develasquez/material-design             Install skill into local workspace (.agents/skills/material-design)
+  npx @develasquez/material-design --global    Install skill globally (~/.gemini/config/skills/material-design)
+  npx @develasquez/material-design --preview   Open interactive visual HTML palette gallery in your browser
+  npx @develasquez/material-design --palettes  Show Truecolor 24-bit terminal preview of the 10 M3 palettes
+  npx @develasquez/material-design --help      Show help message
 
 AI Agent & Design System Integration:
   - Equips Antigravity, Claude, Cursor, and Gemini with Material Design 3 (Material You).
@@ -48,7 +48,8 @@ AI Agent & Design System Integration:
   process.exit(0);
 }
 
-const sourceDir = path.join(__dirname, '..', 'skills', 'material-design');
+const packageRoot = path.join(__dirname, '..');
+const itemsToInstall = ['SKILL.md', 'references', 'vendor'];
 
 let targetDir;
 if (isGlobal) {
@@ -80,7 +81,14 @@ function copyRecursive(src, dest) {
 
 try {
   console.log(`📦 Installing Material Design 3 skill to:\n   ${targetDir}\n`);
-  copyRecursive(sourceDir, targetDir);
+  fs.mkdirSync(targetDir, { recursive: true });
+  for (const item of itemsToInstall) {
+    const srcPath = path.join(packageRoot, item);
+    const destPath = path.join(targetDir, item);
+    if (fs.existsSync(srcPath)) {
+      copyRecursive(srcPath, destPath);
+    }
+  }
   console.log('✅ Material Design 3 skill installed successfully!');
   console.log('🤖 Your AI Agent can now discover and use "material-design".');
 } catch (err) {

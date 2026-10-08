@@ -501,8 +501,8 @@ function showAllPalettesSummary() {
 
   console.log('\n' + '═'.repeat(74));
   console.log('  💡 To inspect a single palette in detail:');
-  console.log('     npx material-design-skill --palettes <palette-name-or-id>');
-  console.log('     Example: npx material-design-skill --palettes forest-sage');
+  console.log('     npx @develasquez/material-design --palettes <palette-name-or-id>');
+  console.log('     Example: npx @develasquez/material-design --palettes forest-sage');
   console.log('═'.repeat(74) + '\n');
 }
 

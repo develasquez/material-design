@@ -1,9 +1,9 @@
-# 🎨 Material Design 3 (Material You) Design System (`material-design-skill`)
+# 🎨 Material Design 3 (Material You) Design System (`material-design`)
 
-[![npm version](https://img.shields.io/npm/v/material-design-skill.svg)](https://www.npmjs.com/package/material-design-skill)
-[![license](https://img.shields.io/github/license/develasquez/material-design-skill.svg)](https://github.com/develasquez/material-design-skill/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/develasquez/material-design-skill?style=social)](https://github.com/develasquez/material-design-skill)
-[![AI Agent Compatible](https://img.shields.io/badge/AI%20Agent-Antigravity%20%7C%20Claude%20%7C%20Cursor%20%7C%20Gemini-blueviolet)](https://github.com/develasquez/material-design-skill)
+[![npm version](https://img.shields.io/npm/v/@develasquez/material-design.svg)](https://www.npmjs.com/package/@develasquez/material-design)
+[![license](https://img.shields.io/github/license/develasquez/material-design.svg)](https://github.com/develasquez/material-design/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/develasquez/material-design?style=social)](https://github.com/develasquez/material-design)
+[![AI Agent Compatible](https://img.shields.io/badge/AI%20Agent-Antigravity%20%7C%20Claude%20%7C%20Cursor%20%7C%20Gemini-blueviolet)](https://github.com/develasquez/material-design)
 [![Design System](https://img.shields.io/badge/Design%20System-Material%20You%20M3-006874)](https://m3.material.io/)
 [![WCAG AAA](https://img.shields.io/badge/Accessibility-WCAG%20AAA%20%E2%89%A57%3A1-426B29)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced.html)
 
@@ -58,7 +58,7 @@ Install this skill into your local project workspace or globally across your mac
 Run inside your project root:
 
 ```bash
-npx material-design-skill
+npx @develasquez/material-design
 ```
 
 This installs the skill into `.agents/skills/material-design/` where AI agents (Antigravity, Claude, Cursor) automatically discover and activate it.
@@ -67,7 +67,7 @@ This installs the skill into `.agents/skills/material-design/` where AI agents (
 Install globally across all AI workspace sessions on your computer:
 
 ```bash
-npx material-design-skill --global
+npx @develasquez/material-design --global
 ```
 
 This installs the skill to `~/.gemini/config/skills/material-design/`.
@@ -76,7 +76,7 @@ This installs the skill to `~/.gemini/config/skills/material-design/`.
 Launch the interactive visual palette gallery in your browser:
 
 ```bash
-npx material-design-skill --preview
+npx @develasquez/material-design --preview
 ```
 
 * Explores all 10 color schemes on live M3 components.
@@ -88,16 +88,16 @@ Inspect schemes directly inside your terminal:
 
 ```bash
 # View summary table of all 10 schemes
-npx material-design-skill --palettes
+npx @develasquez/material-design --palettes
 
 # Detailed view of a specific scheme
-npx material-design-skill --palettes forest-sage
-npx material-design-skill --palettes oceanic-slate
+npx @develasquez/material-design --palettes forest-sage
+npx @develasquez/material-design --palettes oceanic-slate
 ```
 
 ### 5. CLI Help
 ```bash
-npx material-design-skill --help
+npx @develasquez/material-design --help
 ```
 
 ---
@@ -110,7 +110,7 @@ When paired with an AI coding assistant (such as Antigravity, Claude, Cursor, or
 
 1. **Activate the Skill**: The agent loads `material-design`.
 2. **Interactive Visual Palette Selection**:
-   > ⚠️ **Zero Text Prompting Rule**: The agent will NEVER ask you to pick colors via terminal text lists (`ask_question`). Instead, it executes `npx material-design-skill --preview` for live visual evaluation in your browser.
+   > ⚠️ **Zero Text Prompting Rule**: The agent will NEVER ask you to pick colors via terminal text lists (`ask_question`). Instead, it executes `npx @develasquez/material-design --preview` for live visual evaluation in your browser.
 3. **Read `DESIGN.md`**: The agent reads the generated `DESIGN.md` as the Single Source of Truth for design tokens.
 4. **Copy Offline Assets**: The agent copies vendored fonts and bundles to `public/vendor/`.
 5. **Implement UI**: Markup uses semantic CSS custom properties (`var(--md-sys-color-*)`) and `@material/web` components.
@@ -126,10 +126,10 @@ If you use [**`vanilla-core-ui`**](https://github.com/develasquez/vanilla-core-u
 npx vanilla-core-ui
 
 # 2. Add Material Design 3 system
-npx material-design-skill
+npx @develasquez/material-design
 
 # 3. Launch palette selector
-npx material-design-skill --preview
+npx @develasquez/material-design --preview
 ```
 
 In your project:
@@ -288,6 +288,6 @@ Explore detailed guides in `references/`:
 
 * **Author**: [develasquez](https://github.com/develasquez)
 * **License**: [MIT](LICENSE)
-* **Repository**: [https://github.com/develasquez/material-design-skill](https://github.com/develasquez/material-design-skill)
-* **npm Package**: [https://www.npmjs.com/package/material-design-skill](https://www.npmjs.com/package/material-design-skill)
+* **Repository**: [https://github.com/develasquez/material-design](https://github.com/develasquez/material-design)
+* **npm Package**: [https://www.npmjs.com/package/@develasquez/material-design](https://www.npmjs.com/package/@develasquez/material-design)
 * **Architectural Companion**: [`vanilla-core-ui`](https://github.com/develasquez/vanilla-core-ui)
